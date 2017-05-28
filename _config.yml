@@ -165,7 +165,7 @@ materialcdn:
 # Available value of "use":
 #     duoshuo | disqus | disqus_click | changyan
 comment:
-    use: disqus_click1
+    use: disqus_click
     shortname: lgzh1215
     duoshuo_thread_key_type: path
     duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
