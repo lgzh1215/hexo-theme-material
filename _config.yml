@@ -4,7 +4,7 @@
 
 # Head info
 head:
-    favicon: "/img/favicon.png"
+    favicon: "/img/favicon_normal.png"
     high_res_favicon: "/img/favicon_high.png"
     apple_touch_icon: "/img/favicon_high.png"
     keywords: 萌夜雀
