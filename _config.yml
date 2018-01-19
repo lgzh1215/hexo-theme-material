@@ -7,9 +7,9 @@ head:
     favicon: "/img/favicon_normal.png"
     high_res_favicon: "/img/favicon_high.png"
     apple_touch_icon: "/img/favicon_high.png"
-    keywords: 萌夜雀
+    keywords: 萌夜雀 人头会社
     site_verification:
-        google:
+        google: "4_IUCIIHRXDDJ_WXIUCZRKp6YHxSLCilo6rOlfMHoH4"
         baidu:
 
     # Enable generate structured-data as JSON+LD for SEO or not.
@@ -34,12 +34,12 @@ scheme: Paradox
 # UI & UX: slogan, color, effect
 uiux:
     slogan: "行云流水 疾风怒涛 丛云蔽月 风催花"
-    theme_color: "#0097A7"
-    theme_sub_color: "#00838F"
-    hyperlink_color: "#00838F"
-    button_color: "#757575"
-    android_chrome_color: "#0097A7"
-    nprogress_color: "#29d"
+    theme_color: "#9B26AF"
+    theme_sub_color: "#7A1EA1"
+    hyperlink_color: "#7A1EA1"
+    button_color: "#B8B8B8"
+    android_chrome_color: "#9C27B0"
+    nprogress_color: "#AA00FF"
     nprogress_buffer: "800"
 
 # JS Effect Switches
@@ -90,7 +90,7 @@ img:
 #          to /source/data/head.yml as custom code, to load custom font files.
 fonts:
     family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
-    use: google
+    use: ustc
     custom_font_host:
 
 # Card Elevation Level
@@ -105,7 +105,7 @@ copyright_since: 2017
 # You can specify the text you want to show in footer, HTML tag is supported.
 #   For example, you can setup ICP license number as:
 #       '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
-footer_text:
+footer_text: 博客内容遵循 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0协议</a>
 
 # Qrcode for redirect at other device
 #    use: choose which method to generate the qrcode for each posts.
@@ -143,7 +143,7 @@ hanabi:
 #   For example, you can setup a CC license as:
 #       'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 # You can also use Front-Matter `license` to override this setting.
-license: 
+license: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可，转载请注明出处。
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -209,6 +209,10 @@ sidebar:
             link: "/timeline"
             icon: view_list
             divider: false
+        Java6 Api:
+            link: "/java6api-cn"
+            icon: code
+            divider: false
         关于:
             link: "/2017/04/27/about"
             icon: person
@@ -230,9 +234,9 @@ sidebar:
 
 # Comment Systems
 # Available value of "use":
-#     disqus | disqus_click | changyan | livere | gitment | valine
-# If you want to use gitment,you should get the client_id and client_secret form https://github.com/settings/applications/new
-# If you want to use valine,you should get the app_id and app_key form https://leancloud.cn ,more setting please see https://github.com/xCss/Valine
+#     disqus | disqus_click | changyan | livere | gitment | gitalk | valine
+# If you want to use gitment or gitalk,you should get the client_id and client_secret form https://github.com/settings/applications/new
+# If you want to use valine,you should get the app_id and app_key form https://leancloud.cn ,more setting please see https://valine.js.org
 comment:
     use: disqus_click
     shortname: lgzh1215
@@ -244,8 +248,19 @@ comment:
     gitment_owner:  # git repo's owner
     gitment_client_id:  # github app client id 
     gitment_client_secret :  # github app client secret 
-    valine_leancloud_appId: # leancloud application app id
-    valine_leancloud_appKey: # leancloud application app key
+    valine_leancloud_appId:  # leancloud application app id
+    valine_leancloud_appKey:  # leancloud application app key
+    valine_notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+    valine_verify: false # valine verify code (true/false)
+    valine_pageSize: 10 # comment list page size
+    valine_avatar: identicon # gravatar style https://valine.js.org/#/avatar
+    valine_lang: zh-cn # i18n
+    valine_placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+    valine_guest_info: nick,mail,link #valine comment header info
+    gitalk_repo: # git repo of the hexo
+    gitalk_owner: # git repo's owner
+    gitalk_client_id: # github app client id 
+    gitalk_client_secret: # github app client secret
 
 # Search Systems
 # Available value:
@@ -258,7 +273,7 @@ search:
 # Available value:
 #     baidu | google | cnzz
 analytics:
-    google_site_id:
+    google_site_id: UA-112770037-1
     baidu_site_id:
     cnzz_site_id:
 
