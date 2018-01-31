@@ -193,7 +193,7 @@ sidebar:
         icon: home
         divider: false
     archives:
-        use: true
+        use: false
         icon: inbox
         divider: false
     categories:
